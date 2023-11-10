@@ -1,0 +1,38 @@
+** Generated for: hspiceD
+** Generated on: Nov  9 21:42:29 2023
+** Design library name: ece482proj
+** Design cell name: reg
+** Design view name: av_extracted
+
+
+.TEMP 25.0
+.OPTION
++    ARTIST=2
++    INGOLD=2
++    PARHIER=LOCAL
++    PSF=2
+
+** Library name: ece482proj
+** Cell name: reg
+** View name: av_extracted
+c1 vdd vss 1.48672e-15
+c2 clk vss 760.97e-18
+c3 d vss 475.157e-18
+c4 q vss 157.496e-18
+c5 net5 vss 88.7524e-18
+c6 net24 vss 128.884e-18
+c7 net20 vss 479.705e-18
+c8 net1 vss 93.728e-18
+c9 net17 vss 128.152e-18
+c10 net2 vss 618.601e-18
+mpm3 vdd d net17 vdd g45p1svt L=45e-9 W=120e-9 AD=16.8e-15 AS=16.8e-15 PD=520e-9 PS=520e-9 NRD=1.16667 NRS=1.16667 M=1
+mpm1 net20 clk net17 vdd g45p1svt L=45e-9 W=120e-9 AD=16.8e-15 AS=16.8e-15 PD=520e-9 PS=520e-9 NRD=1.16667 NRS=1.16667 M=1
+mpm2 vdd net20 net24 vdd g45p1svt L=45e-9 W=120e-9 AD=16.8e-15 AS=16.8e-15 PD=520e-9 PS=520e-9 NRD=1.16667 NRS=1.16667 M=1
+mpm0 q net2 net24 vdd g45p1svt L=45e-9 W=120e-9 AD=16.8e-15 AS=16.8e-15 PD=520e-9 PS=520e-9 NRD=1.16667 NRS=1.16667 M=1
+mpm4 net2 clk vdd vdd g45p1svt L=45e-9 W=120e-9 AD=16.8e-15 AS=16.8e-15 PD=520e-9 PS=520e-9 NRD=1.16667 NRS=1.16667 M=1
+mnm1 net20 net2 net1 vss g45n1svt L=45e-9 W=120e-9 AD=16.8e-15 AS=16.8e-15 PD=520e-9 PS=520e-9 NRD=1.16667 NRS=1.16667 M=1
+mnm0 vss d net1 vss g45n1svt L=45e-9 W=120e-9 AD=16.8e-15 AS=16.8e-15 PD=520e-9 PS=520e-9 NRD=1.16667 NRS=1.16667 M=1
+mnm2 q clk net5 vss g45n1svt L=45e-9 W=120e-9 AD=16.8e-15 AS=16.8e-15 PD=520e-9 PS=520e-9 NRD=1.16667 NRS=1.16667 M=1
+mnm3 vss net20 net5 vss g45n1svt L=45e-9 W=120e-9 AD=16.8e-15 AS=16.8e-15 PD=520e-9 PS=520e-9 NRD=1.16667 NRS=1.16667 M=1
+mnm6 net2 clk vss vss g45n1svt L=45e-9 W=120e-9 AD=16.8e-15 AS=16.8e-15 PD=520e-9 PS=520e-9 NRD=1.16667 NRS=1.16667 M=1
+.END
