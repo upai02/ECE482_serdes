@@ -13,7 +13,7 @@ extraction_setup \
 	 -macro_cells_type "default" \
 	 -net_name_space "LAYOUT"
 input_db -type assura \
-	 -design_cell_name "reg layout ece482proj" \
+	 -design_cell_name "reg layout Register" \
 	 -directory_name "/home/kainingz/ece482.work/gpdk045" \
 	 -format "DFII" \
 	 -run_name "reg"
