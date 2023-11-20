@@ -1,0 +1,2 @@
+SOFTINCLUDE /software/cadence-2021-09/IC618/share/cdssetup/cds.lib
+#Removed by ddDeleteObj: DEFINE Basic_Gates /home/upai3/ece482.work/gpdk045/serdes/Basic_Gates

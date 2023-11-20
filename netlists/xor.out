@@ -8,11 +8,11 @@ Using: /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/linux64/hspice
   this software is strictly prohibited.
   Input File: xor.cir                                                           
   Command line options: /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/linux64/hspice xor.cir
-  Start time: Mon Nov  6 01:03:45 2023
+  Start time: Mon Nov 20 16:58:01 2023
  lic:  
  lic: FLEXlm: SDK_12.11.1 
- lic: USER:   upai3                HOSTNAME: linux-ssh-01.ews.illinois.edu 
- lic: HOSTID: 11c0a209             PID:      2801193 
+ lic: USER:   upai3                HOSTNAME: fastx3-09.ews.illinois.edu 
+ lic: HOSTID: 16ac61e6             PID:      4090189 
  lic: Using FLEXlm license file: 
  lic: 27005@synopsys.webstore.illinois.edu 
  lic: Checkout 1 hspice 
@@ -722,7 +722,7 @@ Using: /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/linux64/hspice
     LXRCRG2  =      0 
     WXRCRG2  =      0 
     PXRCRG2  =      0 
-  **info** (xor.cir:16) DC voltage reset to initial transient source value in source 0:va. new dc=0.0000D+00
+  **info** (xor.cir:19) DC voltage reset to initial transient source value in source 0:va. new dc=0.0000D+00
   
       
  **info** set option symb=1 internally to help for convergence.
@@ -738,8 +738,9 @@ Using: /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/linux64/hspice
  ****** operating point status is voltage   simulation time is     0.     
     node    =voltage      node    =voltage      node    =voltage
 
- +0:a       =   0.      0:b       =   0.      0:f       = 146.5707m
- +0:net1    =   1.1000  0:vdd     =   1.1000  0:vss     =   0.     
+ +0:a       =   0.      0:b       =   0.      0:f       =  35.0365n
+ +0:net1    =   1.1000  0:net2    =   1.1000  0:vdd     =   1.1000 
+ +0:vss     =   0.     
 
 
           ***** job concluded
@@ -752,28 +753,28 @@ Using: /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/linux64/hspice
  CPU:
  model name	: Intel(R) Xeon(R) Silver 4216 CPU @ 2.10GHz
  cpu MHz	: 2095.078
- CPU(s)		: 12
+ CPU(s)		: 8
   
  OS:
- Linux version 4.18.0-477.13.1.el8_8.x86_64 (mockbuild@x64-builder02.almalinux.org) (gcc version 8.5.0 20210514 (Red Hat 8.5.0-18) (GCC)) #1 SMP Tue May 30 14:53:41 EDT 2023
+ Linux version 4.18.0-477.27.2.el8_8.x86_64 (mockbuild@x64-builder02.almalinux.org) (gcc version 8.5.0 20210514 (Red Hat 8.5.0-18) (GCC)) #1 SMP Fri Sep 29 08:21:01 EDT 2023
 
- System loadavg : 0.43 0.52 0.70 2/1073 2801203
+ System loadavg : 2.46 2.72 2.72 3/1277 4090192
 
 
   ******  PrimeSim HSPICE Threads Information  ******
 
   Command Line Threads Count :     1
-  Available CPU Count        :    12
+  Available CPU Count        :     8
   Actual Threads Count       :     1
 
 
   ******  Circuit Statistics  ******
-  # nodes       =      15 # elements   =      13
-  # resistors   =       0 # capacitors =       5 # inductors   =       0
+  # nodes       =      20 # elements   =      16
+  # resistors   =       0 # capacitors =       6 # inductors   =       0
   # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
   # cccs        =       0 # ccvs       =       0 # volt_srcs   =       4
   # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
-  # jfets       =       0 # mosfets    =       4 # U elements  =       0
+  # jfets       =       0 # mosfets    =       6 # U elements  =       0
   # T elements  =       0 # W elements =       0 # B elements  =       0
   # S elements  =       0 # P elements =       0 # va device   =       0
   # vector_srcs =       0 # N elements =       0
@@ -782,23 +783,23 @@ Using: /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/linux64/hspice
   ******  Runtime Statistics (seconds)  ******
 
   analysis           time    # points   tot. iter  conv.iter
-  op point           0.00           1           8
-  transient          0.02       16001        1215         474 rev=       108
-  readin             0.02
+  op point           0.01           1           4
+  transient          0.03       16001        1567         590 rev=       136
+  readin             0.01
   errchk             0.00
   setup              0.00
   output             0.00
 
 
-           peak memory used        516.50 megabytes
+           peak memory used        519.45 megabytes
            total cpu time            0.05 seconds
-           total elapsed time        3.23 seconds
-           job started at     01:03:45 11/06/2023
-           job ended   at     01:03:48 11/06/2023
+           total elapsed time        0.13 seconds
+           job started at     16:58:01 11/20/2023
+           job ended   at     16:58:01 11/20/2023
 
 >info:         ***** hspice job concluded
-           job total runtime         3.23 seconds
+           job total runtime         0.13 seconds
 
 
  lic: Release hspice token(s) 
- lic: total license checkout elapse time:        3.18(s)
+ lic: total license checkout elapse time:        0.07(s)

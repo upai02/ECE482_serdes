@@ -1,7 +1,7 @@
 * "simulator" "PrimeSim HSPICE"
 * "version" "T-2022.06-SP1 linux64"
 * "format" "HSP"
-* "rundate" "01:03:45 11/06/2023 "
+* "rundate" "16:58:01 11/20/2023 "
 * "netlist" "xor.cir "
 * "runtitle" "45nm xor gate"
 * time =    0.            
@@ -12,8 +12,9 @@
 .nodeset
 + a =   0.            
 + b =   0.            
-+ f = 146.5707m       
++ f =  35.0365n       
 + net1 =   1.1000        
++ net2 =   1.1000        
 + vdd =   1.1000        
 + vss =   0.            
 ***   END: Saved Operating Point ***                     
