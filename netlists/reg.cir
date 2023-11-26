@@ -1,5 +1,5 @@
 ** Generated for: hspiceD
-** Generated on: Nov  9 22:58:05 2023
+** Generated on: Nov 25 18:59:19 2023
 ** Design library name: Register
 ** Design cell name: reg
 ** Design view name: av_extracted
@@ -15,24 +15,22 @@
 ** Library name: Register
 ** Cell name: reg
 ** View name: av_extracted
-c1 vdd vss 1.77411e-15
-c2 clk vss 843.337e-18
-c3 d vss 556.345e-18
-c4 q vss 214.935e-18
-c5 net5 vss 117.449e-18
-c6 net24 vss 211.894e-18
-c7 net20 vss 583.684e-18
-c8 net1 vss 122.211e-18
-c9 net17 vss 212.095e-18
-c10 net2 vss 704.737e-18
-mpm3 vdd d net17 vdd g45p1svt L=45e-9 W=480e-9 AD=67.2e-15 AS=67.2e-15 PD=1.24e-6 PS=1.24e-6 NRD=1.16667 NRS=1.16667 M=1
-mpm1 net20 clk net17 vdd g45p1svt L=45e-9 W=480e-9 AD=67.2e-15 AS=67.2e-15 PD=1.24e-6 PS=1.24e-6 NRD=1.16667 NRS=1.16667 M=1
-mpm2 vdd net20 net24 vdd g45p1svt L=45e-9 W=480e-9 AD=67.2e-15 AS=67.2e-15 PD=1.24e-6 PS=1.24e-6 NRD=1.16667 NRS=1.16667 M=1
-mpm0 q net2 net24 vdd g45p1svt L=45e-9 W=480e-9 AD=67.2e-15 AS=67.2e-15 PD=1.24e-6 PS=1.24e-6 NRD=1.16667 NRS=1.16667 M=1
-mpm4 net2 clk vdd vdd g45p1svt L=45e-9 W=480e-9 AD=67.2e-15 AS=67.2e-15 PD=1.24e-6 PS=1.24e-6 NRD=1.16667 NRS=1.16667 M=1
-mnm1 net20 net2 net1 vss g45n1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9 NRD=1.16667 NRS=1.16667 M=1
-mnm0 vss d net1 vss g45n1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9 NRD=1.16667 NRS=1.16667 M=1
-mnm2 q clk net5 vss g45n1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9 NRD=1.16667 NRS=1.16667 M=1
-mnm3 vss net20 net5 vss g45n1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9 NRD=1.16667 NRS=1.16667 M=1
-mnm6 net2 clk vss vss g45n1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9 NRD=1.16667 NRS=1.16667 M=1
+c1 vdd vss 974.616e-18
+c2 clk vss 488.927e-18
+c3 clkb vss 458.48e-18
+c4 d vss 238.161e-18
+c5 q vss 258.678e-18
+c6 net5 vss 84.834e-18
+c7 net24 vss 102.911e-18
+c8 net20 vss 416.42e-18
+c9 net1 vss 81.9851e-18
+c10 net17 vss 113.608e-18
+mpm3 net17 d vdd vdd g45p1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9 NRD=1.16667 NRS=1.16667 M=1
+mpm1 net20 clk net17 vdd g45p1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9 NRD=1.16667 NRS=1.16667 M=1
+mpm2 net24 net20 vdd vdd g45p1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9 NRD=1.16667 NRS=1.16667 M=1
+mpm0 q clkb net24 vdd g45p1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9 NRD=1.16667 NRS=1.16667 M=1
+mnm0 net1 d vss vss g45n1svt L=45e-9 W=120e-9 AD=16.8e-15 AS=16.8e-15 PD=520e-9 PS=520e-9 NRD=1.16667 NRS=1.16667 M=1
+mnm1 net20 clkb net1 vss g45n1svt L=45e-9 W=120e-9 AD=16.8e-15 AS=16.8e-15 PD=520e-9 PS=520e-9 NRD=1.16667 NRS=1.16667 M=1
+mnm3 net5 net20 vss vss g45n1svt L=45e-9 W=120e-9 AD=16.8e-15 AS=16.8e-15 PD=520e-9 PS=520e-9 NRD=1.16667 NRS=1.16667 M=1
+mnm2 q clk net5 vss g45n1svt L=45e-9 W=120e-9 AD=16.8e-15 AS=16.8e-15 PD=520e-9 PS=520e-9 NRD=1.16667 NRS=1.16667 M=1
 .END
