@@ -1,0 +1,107 @@
+HL_LevelShifter
+
+.lib '/class/ece482/gpdk045_mos' TT
+
+
+.TEMP 25.0
+.OPTION
++    ARTIST=2
++    INGOLD=2
++    PARHIER=LOCAL
++    PSF=2
+
+c1 vdd vss 10.1048e-18
+c2 in vss 60.1816e-18
+c3 out vss 13.2445e-18
+c4 vddio vss 17.6829e-18
+c5 net2 vss 75.8709e-18
+c6 net1 vss 51.6459e-18
+c7 n5__in vss 44.703e-18
+c8 n2__net1 vss 20.2696e-18
+c9 n2__out vss 21.7892e-18
+c10 n4__in vss 43.0291e-18
+c11 n2__net2 vss 42.0556e-18
+c12 n2__in vss 41.9928e-18
+c13 n3__in vss 58.8565e-18
+c14 n1__in vss 57.1761e-18
+c15 n1__out vss 79.3243e-18
+c16 n7__out vss 153.446e-18
+c17 n8__in vss 154.5e-18
+c18 n6__net1 vss 81.5019e-18
+c19 n4__out vss 191.243e-18
+c20 n7__in vss 128.001e-18
+c21 n6__in vss 26.4909e-18
+c22 n4__net1 vss 136.866e-18
+c23 n2__vddio vss 457.305e-18
+c24 n1__vddio vss 37.5579e-18
+c25 n3__net2 vss 49.0038e-18
+c26 n1__vdd vss 25.9324e-18
+c27 n6__out vss 32.3866e-18
+c28 n5__vdd vss 37.1953e-18
+c29 n5__net1 vss 32.2736e-18
+c30 n5__net2 vss 39.7467e-18
+c31 n3__out vss 58.0052e-18
+c32 n2__vdd vss 55.8873e-18
+c33 n3__net1 vss 80.7675e-18
+c34 n5__out vss 59.671e-18
+c35 n4__net2 vss 70.0648e-18
+rj1 n6__net1 n4__net1 919.3e-3
+rj2 n6__in n7__in 246.5e-3
+rj3 n7__in n8__in 758.2e-3
+rj4 n7__out n4__out 1.2551
+rk1 n6__in in 515.7e-3
+rk2 n3__net1 n4__net1 38.0811
+rk3 n4__net1 n5__net1 62.1787
+rk4 n1__in n7__in 548.5e-3
+rk5 n1__vdd n3__vdd 62.2633
+rk6 n3__vdd vdd 179.7e-3
+rk7 vdd n4__vdd 108.4e-3
+rk8 n4__vdd n5__vdd 62.2433
+rk9 n2__vdd n3__vdd 75
+rk10 n2__vdd n4__vdd 75
+rk11 n3__out n4__out 37.8628
+rk12 n4__out n5__out 282.3e-3
+rk13 n5__out n1__out 245.9e-3
+rk14 n5__out n6__out 62.1897
+rk15 net1 n6__net1 548.5e-3
+rk16 n3__net2 n4__net2 31.3082
+rk17 n4__net2 net2 422.6e-3
+rk18 n4__net2 n5__net2 37.7605
+rk19 n3__in n8__in 45.5485
+rk20 n1__vddio n3__vddio 31.3543
+rk21 n3__vddio vddio 70.34e-3
+rk22 n2__vddio n3__vddio 75
+rk23 out n7__out 529.8e-3
+rk25 n3__vss vss 474.8e-3
+rk26 vss n4__vss 5.015e-3
+rk27 n4__vss n5__vss 349.5e-3
+rk29 n3__vss n7__vss 37.8685
+rk30 n4__vss n8__vss 37.8685
+rk31 n5__vss n9__vss 37.8685
+rk32 n2__vss n3__vss 62
+rk33 n2__vss n4__vss 62
+rk34 n2__vss n5__vss 62
+rl1 n1__out n2__out 115.411
+rl2 n1__in n2__in 75.2771
+rl3 net1 n2__net1 107.719
+rl4 net2 n2__net2 75.2771
+rl5 n3__in n4__in 24.2028
+rl6 n3__in n5__in 27.3278
+m0 n1__vddio n5__in n3__net2 n2__vddio g45p2svt L=150e-9 W=320e-9 AD=48e-15 AS=48e-15 PD=940e-9 PS=940e-9 NRD=468.75e-3 NRS=468.75e-3 M=1
+mpm1 n5__vdd n2__out n5__net1 n2__vdd g45p1svt L=45e-9 W=120e-9 AD=16.8e-15 AS=16.8e-15 PD=520e-9 PS=520e-9 NRD=1.16667 NRS=1.16667 M=1
+mpm2 n1__vdd n2__net1 n6__out n2__vdd g45p1svt L=45e-9 W=120e-9 AD=16.8e-15 AS=16.8e-15 PD=520e-9 PS=520e-9 NRD=1.16667 NRS=1.16667 M=1
+m1 n9__vss n2__in n3__net1 n2__vss g45n2svt L=150e-9 W=320e-9 AD=48e-15 AS=48e-15 PD=940e-9 PS=940e-9 NRD=468.75e-3 NRS=468.75e-3 M=1
+m2 n8__vss n2__net2 n3__out n2__vss g45n2svt L=150e-9 W=320e-9 AD=48e-15 AS=48e-15 PD=940e-9 PS=940e-9 NRD=468.75e-3 NRS=468.75e-3 M=1
+m3 n7__vss n4__in n5__net2 n2__vss g45n2svt L=150e-9 W=320e-9 AD=48e-15 AS=48e-15 PD=940e-9 PS=940e-9 NRD=468.75e-3 NRS=468.75e-3 M=1
+
+cOUT out VSS 10fF
+
+vVDDIO VDDIO 0 1.8
+vVDD VDD 0 1.1
+vVSS VSS 0 0
+vIN IN 0 pulse( 0 1.8 100ps 100ps 100ps 4n 8n)
+
+.tran 1ps 16ns
+.option post
+.end
+

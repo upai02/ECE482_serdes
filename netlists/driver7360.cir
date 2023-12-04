@@ -1,0 +1,120 @@
+Driver with Wn=7.36um, B=2
+
+.lib '/class/ece482/gpdk045_mos' TT
+
+
+
+.TEMP 25.0
+.OPTION
++    ARTIST=2
++    INGOLD=2
++    PARHIER=LOCAL
++    PSF=2
+
+** Library name: ECE464_45nm
+** Cell name: IO_inv64
+** View name: av_extracted
+c1 in vss 17.7352e-18
+c2 out vss 27.3873e-18
+c3 vddio vss 11.2895e-18
+c4 net11 vss 290.936e-18
+c5 n5__net11 vss 309.074e-18
+c6 n1__in vss 66.2619e-18
+c7 n4__net11 vss 373.637e-18
+c8 n4__in vss 50.9479e-18
+c9 n3__net11 vss 58.7458e-18
+c10 n3__in vss 35.2479e-18
+c11 n3__vddio vss 968.689e-18
+c12 n1__vddio vss 458.212e-18
+c13 n6__out vss 775.691e-18
+c14 n9__vddio vss 478.067e-18
+c15 n2__out vss 677.392e-18
+c16 n8__net11 vss 47.2305e-18
+c17 n6__net11 vss 64.4027e-18
+c18 n6__vddio vss 81.8596e-18
+c19 n2__in vss 28.126e-18
+c20 n2__net11 vss 28.4527e-18
+c21 n7__net11 vss 48.5445e-18
+c22 n1__out vss 102.248e-18
+rk1 n3__in in 50.3e-3
+rk2 n6__net11 n7__net11 12.7822
+rk3 n7__net11 n8__net11 37.8129
+rk4 n7__net11 n3__net11 459e-3
+rk5 n1__vss n2__vss 75.7945
+rk6 n2__vss n3__vss 1.5133
+rk7 n3__vss n4__vss 1.5259
+rk8 n4__vss n6__vss 1.0278
+rk9 n6__vss n7__vss 42.8942
+rk10 n6__vss vss 79.34e-3
+rk11 n1__vss n2__vss 3.75
+rk12 n1__vss n3__vss 3.75
+rk13 n1__vss n4__vss 3.75
+rk14 n5__vss n6__vss 62
+rk15 out n1__out 220e-3
+rk16 n1__out n3__out 205.7e-3
+rk17 n3__out n4__out 794.5e-3
+rk18 n4__out n5__out 1.5133
+rk19 n5__out n2__out 5.2759
+rk20 n1__out n7__out 949.9e-3
+rk21 n7__out n8__out 1.5259
+rk22 n8__out n9__out 1.5133
+rk23 n9__out n6__out 62.7945
+rk24 n2__out n3__out 75
+rk25 n2__out n4__out 3.75
+rk26 n2__out n5__out 3.75
+rk27 n6__out n7__out 3.1
+rk28 n6__out n8__out 3.1
+rk29 n6__out n9__out 3.1
+rk30 n2__vddio n4__vddio 290.9e-3
+rk31 n4__vddio vddio 177.8e-3
+rk32 vddio n5__vddio 152.4e-3
+rk33 n5__vddio n6__vddio 17.7506
+rk34 n2__vddio n7__vddio 794.5e-3
+rk35 n7__vddio n8__vddio 1.5133
+rk36 n8__vddio n1__vddio 4.6259
+rk37 n5__vddio n10__vddio 296.4e-3
+rk38 n10__vddio n11__vddio 794.5e-3
+rk39 n11__vddio n12__vddio 1.5133
+rk40 n12__vddio n9__vddio 4.6259
+rk41 n1__vddio n2__vddio 62
+rk42 n3__vddio n4__vddio 75
+rk43 n3__vddio n5__vddio 75
+rk44 n1__vddio n7__vddio 3.1
+rk45 n1__vddio n8__vddio 3.1
+rk46 n9__vddio n10__vddio 62
+rk47 n9__vddio n11__vddio 3.1
+rk48 n9__vddio n12__vddio 3.1
+rl1 n1__in n2__in 35.2737
+rl2 n2__in n3__in 50.633
+rl3 n2__in n4__in 24.8571
+rl4 net11 n2__net11 55.3817
+rl5 n2__net11 n3__net11 55.6411
+rl6 n2__net11 n4__net11 24.6756
+rl7 n2__net11 n5__net11 24.6756
+m3 n6__net11 n1__in n6__vddio n3__vddio g45p2svt L=150e-9 W=640e-9 AD=96e-15 AS=96e-15 PD=1.58e-6 PS=1.58e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m0_1__rcx n1__vddio net11 n6__out n3__vddio g45p2svt L=150e-9 W=7.36e-6 AD=1.104e-12 AS=1.104e-12 PD=15.07e-6 PS=15.07e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m0 n6__out n5__net11 n9__vddio n3__vddio g45p2svt L=150e-9 W=7.36e-6 AD=1.472e-12 AS=1.472e-12 PD=15.07e-6 PS=15.07e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m2 n8__net11 n4__in n7__vss n5__vss g45n2svt L=150e-9 W=320e-9 AD=48e-15 AS=48e-15 PD=940e-9 PS=940e-9 NRD=468.75e-3 NRS=468.75e-3 M=1
+m1 n2__out n4__net11 n1__vss n5__vss g45n2svt L=150e-9 W=7.36e-6 AD=1.104e-12 AS=1.104e-12 PD=15.02e-6 PS=15.02e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+
+
+
+Vvddio VDDIO 0 1.8
+Vvss VSS 0 0
+
+
+* Transmission Line Setup
+
+tl OUT 0 load 0 Z0=100 TD=350e-12 IC=0
+cpkg OUT 0 300e-15
+cl load 0 2e-12
+
+
+
+vdrv IN 0 pulse(0 1.8 625p 1p 1p 623p 10n)
+
+
+
+.tran 1p 40n
+.option post
+.end
