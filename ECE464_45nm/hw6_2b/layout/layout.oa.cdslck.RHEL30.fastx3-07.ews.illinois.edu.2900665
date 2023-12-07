@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      weyrich4
+HostName                       fastx3-07.ews.illinois.edu
+ProcessIdentifier              2900665
+ProcessCreationTime_UTC        1696387188
+ProcessCreationTime_Readable   Tue Oct  3 21:39:48 2023 CDT
+AppIdentifier                  OA File System Design Manager
+OSType                         unix
+ReasonForPlacingEditLock       OpenAccess edit lock
+FilePathUsedToEditLock         /home/weyrich4/ece482.work/gpdk045/ECE464_45nm/hw6_2b/layout/layout.oa.cdslck
+TimeEditLocked                 Tue Oct  3 21:41:37 2023 CDT
