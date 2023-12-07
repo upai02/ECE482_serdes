@@ -1,0 +1,63 @@
+45nm 1:2 deMUX
+.lib '/class/ece482/gpdk045_mos' TT
+
+c1 vdd vss 41.3523e-18
+c2 in vss 64.2105e-18
+c3 s vss 42.6861e-18
+c4 snot vss 214.178e-18
+c5 out1 vss 41.6945e-18
+c6 out2 vss 28.5285e-18
+c7 n3__snot vss 29.2823e-18
+c8 n1__s vss 30.9915e-18
+c9 n3__s vss 23.0508e-18
+c10 n1__snot vss 23.645e-18
+c11 n4__snot vss 221.983e-18
+c12 n4__s vss 20.1989e-18
+c13 n6__s vss 125.89e-18
+c14 n5__s vss 67.7193e-18
+c15 n1__vdd vss 469.65e-18
+c16 n2__out1 vss 42.6324e-18
+c17 n1__in vss 33.2081e-18
+c18 n1__out1 vss 48.1769e-18
+c19 n5__in vss 31.1938e-18
+c20 n6__in vss 33.181e-18
+c21 n2__out2 vss 32.2264e-18
+c22 n4__in vss 29.8728e-18
+c23 n1__out2 vss 33.5136e-18
+c24 n2__in vss 43.2852e-18
+c25 n3__in vss 42.2544e-18
+rj1 n6__s n5__s 1.0685
+rk1 out2 n1__out2 75.169
+rk2 out2 n2__out2 62.1561
+rk4 s n5__s 500e-3
+rk6 n1__vdd vdd 75
+rk7 vss n1__vss 62.0051
+rk8 n1__in n2__in 62.1857
+rk9 n2__in in 339.8e-3
+rk10 in n3__in 306.4e-3
+rk11 n3__in n4__in 75.1503
+rk12 n2__in n5__in 75.1503
+rk13 n3__in n6__in 62.1857
+rk14 n4__s n6__s 500e-3
+rk15 out1 n1__out1 75.1799
+rk16 out1 n2__out1 62.163
+rk17 n4__snot snot 2.1418
+rl1 n1__s s 121.903
+rl2 n1__snot snot 88.4636
+rl3 n3__snot n4__snot 121.903
+rl4 n3__s n4__s 84.7319
+mpm2 n6__in n1__s n2__out2 n1__vdd g45p1svt L=45e-9 W=120e-9 AD=20.4e-15 AS=20.4e-15 PD=585e-9 PS=585e-9 NRD=1.16667 NRS=1.16667 M=1
+mpm0 n2__out1 n3__snot n1__in n1__vdd g45p1svt L=45e-9 W=120e-9 AD=21e-15 AS=21e-15 PD=585e-9 PS=585e-9 NRD=1.16667 NRS=1.16667 M=1
+mnm2 n4__in n1__snot n1__out2 n1__vss g45n1svt L=45e-9 W=120e-9 AD=20.4e-15 AS=20.4e-15 PD=585e-9 PS=585e-9 NRD=1.16667 NRS=1.16667 M=1
+mnm1 n1__out1 n3__s n5__in n1__vss g45n1svt L=45e-9 W=120e-9 AD=21e-15 AS=21e-15 PD=585e-9 PS=585e-9 NRD=1.16667 NRS=1.16667 M=1
+
+vSupply vdd 0 1.1
+vGnd vss 0 0
+vIn in 0 pulse (0 1.1 0 100p 100p 8n 16n)
+vS s 0 pulse (0 1.1 0 100p 100p 2n 4n)
+vSBAR snot 0 pulse (1.1 0 0 100p 100p 2n 4n)
+
+.tran 1p 16n 
+.option post
+
+.END

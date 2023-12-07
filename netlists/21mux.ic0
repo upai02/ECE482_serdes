@@ -1,0 +1,43 @@
+* "simulator" "PrimeSim HSPICE"
+* "version" "T-2022.06-SP1 linux64"
+* "format" "HSP"
+* "rundate" "17:26:45 12/06/2023 "
+* "netlist" "21mux.cir "
+* "runtitle" "45nm 2:1 mux"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ a =   1.1000        
++ b =   0.            
++ n1__a =   1.1000        
++ n1__b =   1.2433n       
++ n1__s =   5.8194a       
++ n1__sbar =   1.1000        
++ n1__vdd =   1.1000        
++ n1__vss =  68.8674p       
++ n1__z =  53.4324n       
++ n2__a =   1.1000        
++ n2__b =  68.3869p       
++ n2__s = 1.752e-19       
++ n2__sbar =   1.1000        
++ n2__vss =   2.1037f       
++ n2__z =  53.1825n       
++ n3__s =  59.1970p       
++ n3__sbar =   1.1000        
++ n3__z =  53.1790n       
++ n4__z =  52.3826n       
++ n5__s = 1.441e-19       
++ n5__sbar =   1.1000        
++ n5__z =  53.5940n       
++ n6__z =  53.2474n       
++ n7__s = 1.132e-19       
++ n8__s = 6.193e-20       
++ s =   0.            
++ sbar =   1.1000        
++ vdd =   1.1000        
++ vss =   0.            
++ z =  53.1805n       
+***   END: Saved Operating Point ***                     
