@@ -1,8 +1,3 @@
- Generated for hspiceD
- Generated on Dec  6 222641 2023
- Design library name ECE464_45nm
- Design cell name full
- Design view name av_extracted
 
 
 .TEMP 25.0
@@ -12,9 +7,7 @@
 +    PARHIER=LOCAL
 +    PSF=2
 
- Library name ECE464_45nm
- Cell name full
- View name av_extracted
+.lib '/class/ece482/gpdk045_mos' TT
 c1 vdd vss 4.90978e-18
 c2 data vss 786.392e-18
 c3 en1_8 vss 702.701e-18
@@ -13250,4 +13243,18 @@ mi10__nm1 n2__i10__net19 n3__i10__net18 n303__vss n66__vss g45n1svt L=45e-9 W=12
 mi10__nm37 n14__i10__c2 n7__clk i10__net19 n66__vss g45n1svt L=45e-9 W=120e-9 AD=16.8e-15 AS=16.8e-15 PD=520e-9 PS=520e-9 NRD=1.16667 NRS=1.16667 M=1
 mi10__nm44 n22__i10__c2b n4__i10__c2 n302__vss n66__vss g45n1svt L=45e-9 W=120e-9 AD=16.8e-15 AS=16.8e-15 PD=520e-9 PS=520e-9 NRD=1.16667 NRS=1.16667 M=1
 mi10__nm4 n2__i10__net8 n3__i10__c4b n301__vss n66__vss g45n1svt L=45e-9 W=120e-9 AD=16.8e-15 AS=16.8e-15 PD=520e-9 PS=520e-9 NRD=1.16667 NRS=1.16667 M=1
+
+vvdd vdd 0 1.1
+vvddio vddio 0 1.8
+vvss vss 0 0
+vclk_in clk_in 0 pulse( 0 1.8 5p 5p 5p 0.3125n 0.625n)
+**vclkb100m clkbar 0 pulse( 1.1 0 5p 5p 5p 5n 10n)
+**ven en 0 pwl( 0 0 4.9n 0 5n 1.1 )
+ven1_8 en1_8 0 0
+vexttx1_8 exttx1_8 0 0
+.tran 0 5ns
+.option post
+.measure TRAN iavg AVG i(vvdd) FROM=0 TO=5e-9
+.measure TRAN iavgio AVG i(vvddio) FROM=0 TO=5e-9
+.measure TRAN power PARAM='1.1*iavg + 1.8*iavgio'
 .END

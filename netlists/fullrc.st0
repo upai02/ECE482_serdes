@@ -1,0 +1,58 @@
+****** PrimeSim HSPICE -- T-2022.06-SP1 linux64 (Aug 19 2022 7764626) ******
+Input File: fullrc.netlist
+lic:
+lic: FLEXlm: SDK_12.11.1
+lic: USER:   kainingz             HOSTNAME: linux-ssh-06.ews.illinois.edu
+lic: HOSTID: 11c0a709             PID:      2488521
+lic: Using FLEXlm license file:
+lic: 27005@synopsys.webstore.illinois.edu
+lic: Checkout 1 hspice
+lic: License/Maintenance for hspice will expire on 16-apr-2024/2023.03
+lic: 13(in_use)/50(total) FLOATING license(s) on SERVER 27005@synopsys.webstore.illinois.edu
+lic:
+
+ init: begin read circuit files, cpu clock= 3.31E-01
+       option search = /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/parts/ad
+       option search = /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/parts/behave
+       option search = /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/parts/bjt
+       option search = /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/parts/burr_brn
+       option search = /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/parts/comlinear
+       option search = /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/parts/dio
+       option search = /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/parts/fet
+       option search = /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/parts/lin_tech
+       option search = /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/parts/pci
+       option search = /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/parts/signet
+       option search = /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/parts/ti
+       option search = /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/parts/tline
+       option search = /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/parts/xilinx
+       option artist =     2.00
+       option ingold =     2.00
+       option parhier = local
+       option psf =     2.00
+       option post
+ init: end read circuit files, cpu clock= 4.37E-01 peak memory=     545 mb
+ init: begin check errors, cpu clock= 4.37E-01
+ init: end check errors, cpu clock= 5.28E-01 peak memory=     545 mb
+ init: begin setup matrix, pivot=     0 cpu clock= 5.28E-01
+       establish matrix -- done, cpu clock= 5.36E-01 peak memory=     545 mb
+       re-order matrix -- done, cpu clock= 7.95E-01 peak memory=     567 mb
+ init: end setup matrix, cpu clock= 8.40E-01 peak memory=     567 mb
+ dcop: begin dcop, cpu clock= 8.47E-01
+       establish matrix -- done, cpu clock= 4.43E+00 peak memory=     567 mb
+       re-order matrix -- done, cpu clock= 4.65E+00 peak memory=     572 mb
+ dcop: end dcop, cpu clock= 4.69E+00 peak memory=     572 mb tot_iter=     135
+ output: fullrc.mt0
+ sweep: tran tran0    begin, stop_t=  5.00E-09 #sweeps=  21 cpu clock= 4.70E+00
+ tran: time= 5.1102E-10 tot_iter=     151 conv_iter=      53 cpu clock= 5.23E+00
+ tran: time= 1.0136E-09 tot_iter=     275 conv_iter=      97 cpu clock= 5.62E+00
+ tran: time= 1.5086E-09 tot_iter=     394 conv_iter=     135 cpu clock= 6.01E+00
+ tran: time= 2.0017E-09 tot_iter=     526 conv_iter=     183 cpu clock= 6.45E+00
+ tran: time= 2.5050E-09 tot_iter=     624 conv_iter=     215 cpu clock= 6.76E+00
+ tran: time= 3.0068E-09 tot_iter=     748 conv_iter=     260 cpu clock= 7.11E+00
+ tran: time= 3.5136E-09 tot_iter=     873 conv_iter=     305 cpu clock= 7.53E+00
+ tran: time= 4.0010E-09 tot_iter=     969 conv_iter=     337 cpu clock= 7.87E+00
+ tran: time= 4.5028E-09 tot_iter=    1104 conv_iter=     387 cpu clock= 8.34E+00
+ tran: time= 5.0000E-09 tot_iter=    1201 conv_iter=     419 cpu clock= 8.70E+00
+ sweep: tran tran0    end, cpu clock= 8.71E+00 peak memory=     572 mb
+>info:         ***** hspice job concluded
+ lic: Release hspice token(s)
