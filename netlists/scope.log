@@ -1,41 +1,176 @@
-Mdi:ArrangeIcons
-wm geometry . 900x785+568+163
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-ScopeSigMgr:loadpffile /home/upai3/ece482.work/gpdk045/serdes/netlists/xor.tr0 1 openonly
+ScopeSigMgr:loadpffile /home/upai3/ece482.work/gpdk045/serdes/netlists/12demux.tr0 1 openonly
 # PF:1
-wm geometry .sigmgr._PF:1 290x358+1280+708
-pf:read PF:1 v(a) v(b) v(f)
-# WF:1:1 WF:1:2 WF:1:3
-Graph addsignal {WF:1:1 WF:1:2 WF:1:3} -region {new new new} -yview {real(y) real(y) real(y)} -xview {real(x) real(x) real(x)} -tracehi {2 2 2}
-# Signal0 Signal1 Signal2
-wm geometry .sigmgr 467x236+992+283
-wm geometry .sigmgr 467x236+1159+296
-wm geometry .sigmgr 467x236+1412+320
-wm geometry .sigmgr 467x236+1514+327
-wm geometry .sigmgr 467x236+1520+327
-wm geometry .sigmgr._PF:1 290x358+1289+700
-wm geometry .sigmgr._PF:1 290x358+1561+668
-wm geometry .sigmgr._PF:1 290x358+1612+661
-Mdi:ArrangeIcons
-wm geometry . 2560x1281+-1+27
-Mdi:Resize 1546 1071
+wm geometry .sigmgr._PF:1 290x362+960+495
+pf:read PF:1 v(in) v(s) v(snot) v(out1) v(out2)
+# WF:1:1 WF:1:2 WF:1:3 WF:1:4 WF:1:5
+Graph addsignal {WF:1:1 WF:1:2 WF:1:3 WF:1:4 WF:1:5} -region {new new new new new} -yview {real(y) real(y) real(y) real(y) real(y)} -xview {real(x) real(x) real(x) real(x) real(x)} -tracehi {2 2 2 2 2}
+# Signal0 Signal1 Signal2 Signal3 Signal4
+wm geometry .sigmgr 467x240+409+217
+wm geometry .sigmgr 467x240+396+304
+wm geometry .sigmgr 467x240+390+427
+wm geometry .sigmgr 467x240+386+468
+wm geometry .sigmgr 467x240+383+480
+wm geometry .sigmgr 467x240+383+483
+wm geometry .sigmgr 467x240+382+492
+wm geometry .sigmgr 467x240+382+494
+wm geometry .sigmgr 467x240+383+494
+wm geometry .sigmgr 467x240+419+467
+wm geometry .sigmgr 467x240+573+411
+wm geometry .sigmgr 467x240+800+344
+wm geometry .sigmgr 467x240+871+314
+wm geometry .sigmgr 467x240+873+312
+wm geometry .sigmgr 467x240+877+301
+wm geometry .sigmgr 467x240+894+265
+wm geometry .sigmgr 467x240+912+241
+wm geometry .sigmgr 467x240+919+228
+Mdi:Resize 730 639
 Mdi:Move 5 5
 Graph:Select Graph0
 Graph:DSel
 Graph itemselect Signal1 add
 # Signal1
-Graph sigconfig Signal1 -region 0 -rgnindex 1
+Graph sigconfig Signal1 -region 2 -rgnindex 1
+Graph:DSel
+Graph itemselect Signal0 add
+# Signal0
+Graph sigconfig Signal0 -region 3 -rgnindex 1
+Graph:DSel
+Graph itemselect Signal3 add
+# Signal3
+Graph sigconfig {Signal3 Signal0} -region {2 2} -rgnindex {1 2}
+Graph itemselect Signal3 add
+# Signal3
+Graph sigconfig Signal3 -region 1 -rgnindex 3
+Graph itemselect Signal3 add
+# Signal3
+Graph sigconfig Signal3 -region 1 -rgnindex 3
+Graph:DSel
+Graph itemselect Signal4 add
+# Signal4
+Graph:DSel
+Graph itemselect Signal0 add
+# Signal0
+Graph delsignal selected
+Graph:DSel
+Graph itemselect Signal4 add
+# Signal4
+Graph delsignal selected
+Graph:DSel
+Graph itemselect Signal3 add
+# Signal3
+Graph delsignal selected
+wm geometry .sigmgr._PF:1 290x362+952+485
+wm geometry .sigmgr._PF:1 290x362+970+463
+wm geometry .sigmgr._PF:1 290x362+992+414
+wm geometry .sigmgr._PF:1 290x362+996+399
+Graph:DSel
+pf:read PF:1 v(out1) v(out2)
+# WF:1:4 WF:1:5
+Graph addsignal {WF:1:4 WF:1:5} -region {new new} -yview {real(y) real(y)} -xview {real(x) real(x)} -tracehi {2 2}
+# Signal5 Signal6
+Graph:Select Graph0
 Graph:DSel
 Graph itemselect Signal2 add
 # Signal2
-Graph sigconfig Signal2 -region 0 -rgnindex 2
-wm geometry .sigmgr 467x236+1521+327
-wm geometry .sigmgr 467x236+1663+296
-wm geometry .sigmgr 467x236+1805+240
-wm geometry .sigmgr._PF:1 290x358+1630+656
-wm geometry .sigmgr._PF:1 290x358+1870+607
-wm geometry .sigmgr._PF:1 290x358+1921+595
+Graph delsignal selected
+Graph:DSel
+ScopeSigMgr:Reload 0 {{(1) 12demux.tr0}}
+ScopeSigMgr:Reload 0 {{(1) 12demux.tr0}}
+pf:read PF:3 v(in)
+# WF:3:4
+Graph addsignal WF:3:4 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal13
+Graph:Select Graph0
+Graph:DSel
+Graph itemselect Signal13 add
+# Signal13
+Graph sigconfig Signal13 -region 0 -rgnindex 1
+Graph:DSel
+Graph itemselect Signal12 add
+# Signal12
+Graph sigconfig Signal12 -region 2 -rgnindex 1
+Graph:DSel
+Graph itemselect Signal13 add
+# Signal13
+Graph sigconfig Signal13 -region 1 -rgnindex 1
+Graph itemselect Signal13 add
+# Signal13
+Graph sigconfig Signal13 -region 2 -rgnindex 1
+Graph:DSel
+Graph itemselect Signal11 add
+# Signal11
+Graph sigconfig Signal11 -region 2 -rgnindex 2
+Graph:DSel
+Graph itemselect Signal12 add
+# Signal12
+Graph itemselect Signal12 add
+# Signal12
+Graph sigconfig {Signal12 Signal13 Signal11} -regswap {1 2 2}
+Graph:DSel
+Graph itemselect Signal13 add
+# Signal13
+Graph sigconfig {Signal13 Signal11} -regswap {2 3}
+Graph:DSel
+Graph itemselect Signal11 add
+# Signal11
+Graph sigconfig {Signal11 Signal13} -regswap {2 3}
+Mdi:ArrangeIcons
+wm geometry . 1920x855+-1+27
+wm geometry .sigmgr._PF:1 290x362+1002+400
+wm geometry .sigmgr._PF:1 290x362+1119+437
+wm geometry .sigmgr._PF:1 290x362+1340+500
+wm geometry .sigmgr._PF:1 290x362+1445+522
+wm geometry .sigmgr._PF:1 290x362+1452+521
+wm geometry .sigmgr._PF:1 290x362+1454+521
+wm geometry .sigmgr._PF:1 290x362+1454+519
+wm geometry .sigmgr._PF:1 290x362+1454+514
+wm geometry .sigmgr 467x240+943+225
+wm geometry .sigmgr 467x240+1112+219
+wm geometry .sigmgr 467x240+1417+194
+wm geometry .sigmgr 467x240+1436+190
+Mdi:Resize 991 709
+Mdi:Move 5 5
+Graph:DSel
+pf:read PF:3 v(snot)
+# WF:3:6
+Graph addsignal WF:3:6 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal14
+Graph:Select Graph0
+Graph:DSel
+Graph itemselect Signal14 add
+# Signal14
+Graph sigconfig Signal14 -region 0 -rgnindex 1
+Graph:DSel
+Mdi:Resize 1059 720
+Mdi:Move 5 5
+Graph axisconfig {AxisY(0,0) AxisX(0) AxisY(1,0) AxisY(2,0) AxisY(3,0)} -range {{-0.8625 2.2875 } {-8.75n 26.25n } {-2.5 3.5 } {-2.5 3.5 } {-1.15 3.05 }}
+Graph axisconfig {AxisY(0,0) AxisX(0) AxisY(1,0) AxisY(2,0) AxisY(3,0)} -range {{0.32 1.64 } {3.2n 16.4n } {-1.7 1.6 } {-1.7 1.6 } {-0.02 1.96 }}
+Graph axisconfig {AxisX(0) AxisY(0,0) AxisY(1,0) AxisY(2,0) AxisY(3,0)} -range {all all all all all} -zoomed {0 0 0 0 0}
+Graph axisconfig {AxisY(0,0) AxisX(0) AxisY(1,0) AxisY(2,0) AxisY(3,0)} -range {{-0.8625 2.2875 } {-8.75n 26.25n } {-2.5 3.5 } {-2.5 3.5 } {-1.15 3.05 }}
+Graph axisconfig {AxisX(0) AxisY(0,0) AxisY(1,0) AxisY(2,0) AxisY(3,0)} -range {all all all all all} -zoomed {0 0 0 0 0}
+Graph axisconfig {AxisY(0,0) AxisX(0) AxisY(1,0) AxisY(2,0) AxisY(3,0)} -range {{0.44475 0.9645 } {5.775n 11.55n } {-0.01 0.98 } {-0.01 0.98 } {0.593 1.286 }}
+Mdi:Move 10 -11
+Mdi:Move 3 -15
+Mdi:Resize 1059 730
+Mdi:Move 3 -15
+Mdi:Resize 1334 730
+Mdi:Move 3 -15
+Graph axisconfig {AxisY(0,0) AxisX(0) AxisY(1,0) AxisY(2,0) AxisY(3,0)} -range {{0.1 1.3 } {0.0 16n } {-1.25 1.75 } {-1.25 1.75 } {0.0 2.0 }}
+Graph axisconfig {AxisX(0) AxisY(0,0) AxisY(1,0) AxisY(2,0) AxisY(3,0)} -range {all all all all all} -zoomed {0 0 0 0 0}
+Graph:DSel
+Graph itemselect Signal12 add
+# Signal12
+Graph sigconfig Signal12 -region 2 -rgnindex 1
+wm geometry .sigmgr._PF:1 290x362+1455+514
+wm geometry .sigmgr._PF:1 290x362+1479+509
+wm geometry .sigmgr._PF:1 290x362+1499+504
+wm geometry .sigmgr._PF:1 290x362+1501+503
+Graph:DSel
+Graph:DSel
+Graph:DSel
+Graph:DSel
+Graph:DSel
+Graph:DSel
+Graph:DSel
+Graph:DSel
+Graph:DSel

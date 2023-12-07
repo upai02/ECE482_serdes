@@ -1,0 +1,811 @@
+Using: /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/linux64/hspice 12demux.cir
+ ****** PrimeSim HSPICE -- T-2022.06-SP1 linux64 (Aug 19 2022 7764626) ******
+  Copyright (c) 1986 - 2023 by Synopsys, Inc. All Rights Reserved.
+  This software and the associated documentation are proprietary
+  to Synopsys, Inc. This software may only be used in accordance
+  with the terms and conditions of a written license agreement with
+  Synopsys, Inc. All other use, reproduction, or distribution of
+  this software is strictly prohibited.
+  Input File: 12demux.cir                                                       
+  Command line options: /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/linux64/hspice 12demux.cir
+  Start time: Wed Dec  6 18:37:32 2023
+ lic:  
+ lic: FLEXlm: SDK_12.11.1 
+ lic: USER:   upai3                HOSTNAME: fastx3-04.ews.illinois.edu 
+ lic: HOSTID: 16ac5ce6             PID:      916538 
+ lic: Using FLEXlm license file: 
+ lic: 27005@synopsys.webstore.illinois.edu 
+ lic: Checkout 1 hspice 
+ lic: License/Maintenance for hspice will expire on 16-apr-2024/2023.03 
+ lic: 1(in_use)/50(total) FLOATING license(s) on SERVER 27005@synopsys.webstore.illinois.edu 
+ lic:   
+  **warning** (/class/ece482/gpdk045_mos_details:124) Model g45n1svt device geometries will not be checked against the limits set by lmin, lmax, wmin and wmax. To enable this check, add a period(.) to the model name(i.e. enable model selector).
+1****** PrimeSim HSPICE -- T-2022.06-SP1 linux64 (Aug 19 2022 7764626) ******
+ ******  
+ 45nm 1:2 demux
+
+ ****** mos   model parameters tnom=  25.000 temp=  25.000 ******
+ Model file: /class/ece482/gpdk045_mos_details
+ Model line:          124
+ Model Name: g45n1svt  
+ BSIM4 Model (Level 54)
+    MOBMOD = 0
+    BINUNIT = 2
+    PARAMCHK = 1
+    CAPMOD = 2
+    DIOMOD = 1
+    RDSMOD = 0
+    TRNQSMOD = 0
+    ACNQSMOD = 0
+    RBODYMOD = 0
+    RGATEMOD = 0
+    PERMOD = 1
+    GEOMOD = 0
+    RGEOMOD = 0
+    FNOIMOD = 1
+    TNOIMOD = 0
+    IGCMOD = 1
+    IGBMOD = 1
+    STIMOD = 1
+    VBFWDMOD = 0
+    VERSION =    4.3 
+    TOXREF =  3e-09 
+    TOXE = 2.41e-09 
+    TOXP = 2.095e-09 
+    TOXM = 2.41e-09 
+    DTOX = 3.15e-10 
+    EPSROX =    3.9 
+    CDSC =      0 
+    CDSCB =      0 
+    CDSCD =      0 
+    CIT = 0.0007212 
+    NFACTOR = 0.2326 
+    XJ = 8.1e-08 
+    VSAT = 1.464e+05 
+    A0 =  0.001 
+    AGS =   5.44 
+    A1 =      0 
+    A2 =      1 
+    AT = 1.4e+05 
+    KETA = -0.09481 
+    NSUB =  6e+16 
+    NDEP =  1e+17 
+    NSD =  1e+20 
+    NGATE = 1.6e+20 
+    GAMMA1 =      0 
+    GAMMA2 =      0 
+    VBX =      0 
+    VBM =     -3 
+    XT = 1.55e-07 
+    K1 = 0.3026 
+    KT1 = -0.181 
+    KT1L =      0 
+    KT2 = -0.036 
+    K2 = 0.01443 
+    K3 = -7.285 
+    K3B =  2.455 
+    LPE0 = 6.61e-08 
+    LPEB =  2e-08 
+    DVTP0 = 2.361e-06 
+    DVTP1 =    4.5 
+    W0 = 8.19e-08 
+    DVT0 = 0.2364 
+    DVT1 = 0.5374 
+    DVT2 = 0.05567 
+    DVT0W =      0 
+    DVT1W =      0 
+    DVT2W =      0 
+    DROUT =  0.672 
+    DSUB = 0.4222 
+    VTH0 = 0.3192 
+    EU =   1.67 
+    UA = -2.003e-09 
+    UA1 = 1.04e-09 
+    UB = 2.387e-18 
+    UB1 = -4.64e-19 
+    UC = 2.056e-10 
+    UC1 = 8.71e-11 
+    U0 = 0.01549 
+    UTE =     -1 
+    VOFF = -0.1568 
+    VOFFL = -3.595e-09 
+    MINV =  -0.15 
+    FPROUT =    300 
+    PDITS =      0 
+    PDITSD =      0 
+    PDITSL =      0 
+    DELTA = 0.007596 
+    RDSW =    100 
+    RDSWMIN =      0 
+    RDWMIN =      0 
+    RSWMIN =      0 
+    RDW =    100 
+    RSW =    100 
+    PRWG =      0 
+    PRWB =      0 
+    PRT =      0 
+    ETA0 = 0.0009635 
+    ETAB = 0.1423 
+    PCLM =  1.441 
+    PDIBLC1 = -0.005428 
+    PDIBLC2 =      0 
+    PDIBLCB =      1 
+    PSCBE1 =  1e+09 
+    PSCBE2 =  1e-20 
+    PVAG =    1.2 
+    WR =      1 
+    DWG =      0 
+    DWB =      0 
+    XW =      0 
+    XWREF =      0 
+    XL =      0 
+    XLREF =      0 
+    B0 =      0 
+    B1 =      0 
+    ALPHA0 =  2e-10 
+    ALPHA1 =   0.01 
+    AGIDL = 2.151e-07 
+    BGIDL = 2.139e+09 
+    CGIDL =   0.22 
+    PHIN =      0 
+    EGIDL = 0.2973 
+    AIGC = 0.0112 
+    BIGC = 0.001392 
+    CIGC = 0.000622 
+    AIGSD = 0.0106 
+    BIGSD = 0.001235 
+    CIGSD =   0.07 
+    AIGBACC =   0.02 
+    BIGBACC = 0.00247 
+    CIGBACC = 0.3325 
+    AIGBINV = 0.0158 
+    BIGBINV = 0.004893 
+    CIGBINV = 0.0061 
+    NIGC =   3.07 
+    NIGBINV =     10 
+    NIGBACC =     10 
+    NTOX =      1 
+    EIGBINV =    1.1 
+    PIGCD =  2.591 
+    POXEDGE =      1 
+    XRCRG1 =     12 
+    TNOIA =    1.5 
+    TNOIB =    3.5 
+    NTNOI =      1 
+    XRCRG2 =      1 
+    BETA0 =    6.4 
+    IJTHDFWD =   0.01 
+    IJTHSFWD =   0.01 
+    IJTHDREV =   0.01 
+    IJTHSREV =   0.01 
+    XJBVD =      1 
+    XJBVS =      1 
+    BVD =     10 
+    BVS =     10 
+    VFB =     -1 
+    GBMIN =  1e-12 
+    RBDB =     50 
+    RBPB =     50 
+    RBSB =     50 
+    RBPS =     50 
+    RBPD =     50 
+    CGSL = 1.71e-11 
+    CGDL = 1.71e-11 
+    CKAPPAS =    0.6 
+    CKAPPAD =    0.6 
+    CF = 8.13e-11 
+    CLC = 1.04e-07 
+    CLE =    0.6 
+    DWC =      0 
+    DLC =      0 
+    DLCIG = 2.48e-09 
+    DWJ =      0 
+    VFBCV =     -1 
+    ACDE =      1 
+    MOIN =   5.67 
+    NOFF =   2.96 
+    VOFFCV =  -0.12 
+    DMCG =  4e-08 
+    DMCI =  4e-08 
+    DMDG =      0 
+    DMCGT =      0 
+    XGW =      0 
+    XGL =      0 
+    RSHG =   15.5 
+    NGCON =      1 
+    TCJ = 0.000652 
+    TPB = 0.0011 
+    TCJSW = 0.000357 
+    TPBSW = 0.0019 
+    TCJSWG = 0.0015 
+    TPBSWG =  0.001 
+    SK0 =      0 
+    SK1 =      0 
+    SK2 =      0 
+    SL =  2e-06 
+    SW =  2e-06 
+    K =      0 
+    LNFACTOR = 1.398e-07 
+    LVSAT = -0.0005407 
+    LAGS = 2.574e-08 
+    LKETA = 3.624e-09 
+    LK2 = -6.378e-10 
+    LDROUT = -6.495e-09 
+    LVTH0 = 2.055e-09 
+    LUA = -1.953e-18 
+    LUB = -1.319e-27 
+    LUC = -6.933e-18 
+    LU0 = -1.37e-10 
+    LVOFF = -1.675e-10 
+    LETAB = -6.624e-09 
+    LPDIBLC1 = 3.148e-10 
+    WNFACTOR = 2.204e-10 
+    WVSAT = -0.004165 
+    WAGS = 7.09e-08 
+    WKETA = 1.039e-08 
+    WK2 = -8.114e-09 
+    WDROUT = -1.299e-08 
+    WVTH0 = 2.369e-09 
+    WUA = 4.873e-17 
+    WUB = -6.82e-26 
+    WUC = -2.044e-17 
+    WU0 = -7.771e-11 
+    WVOFF = -2.622e-10 
+    WETAB = -1.325e-08 
+    WPDIBLC1 = 6.296e-10 
+    PNFACTOR = 1.325e-16 
+    PVSAT = 2.416e-10 
+    PAGS = -7.618e-15 
+    PKETA = -4.204e-16 
+    PK2 = 2.54e-16 
+    PDROUT = 7.534e-16 
+    PVTH0 = 6.451e-17 
+    PUA = 6.699e-25 
+    PUB = -8.036e-34 
+    PUC = 9.34e-25 
+    PU0 = 8.434e-18 
+    PVOFF = 9.333e-18 
+    PETAB = 7.684e-16 
+    PPDIBLC1 = -3.652e-17 
+    TNOM =  298.1 
+    CGSO = 5.53e-11 
+    CGDO = 5.53e-11 
+    CGBO =      0 
+    XPART =      1 
+    RSH =   17.5 
+    JSS = 2.1e-07 
+    JSWS = 3.4e-13 
+    JSWGS = 1.2e-12 
+    PBS =  0.511 
+    MJS =  0.264 
+    PBSWS =  0.786 
+    MJSWS =  0.011 
+    CJS = 0.000861 
+    CJSWS = 4.87e-11 
+    NJS =      1 
+    PBSWGS =  0.464 
+    MJSWGS =  0.511 
+    CJSWGS = 2.56e-10 
+    XTIS =      3 
+    JSD = 2.1e-07 
+    JSWD = 3.4e-13 
+    JSWGD = 1.2e-12 
+    PBD =  0.511 
+    MJD =  0.264 
+    PBSWD =  0.786 
+    MJSWD =  0.011 
+    CJD = 0.000861 
+    CJSWD = 4.87e-11 
+    NJD =      1 
+    PBSWGD =  0.464 
+    MJSWGD =  0.511 
+    CJSWGD = 2.56e-10 
+    XTID =      3 
+    LMLT =      1 
+    WMLT =      1 
+    LINT =  1e-09 
+    LL =      0 
+    LLC =      0 
+    LLN =      1 
+    LW =      0 
+    LWC =      0 
+    LWN =      1 
+    LWL =      0 
+    LWLC =      0 
+    LMIN =  4e-08 
+    LMAX =  6e-08 
+    WINT =  2e-09 
+    WL =      0 
+    WLC =      0 
+    WLN =      1 
+    WW =      0 
+    WWC =      0 
+    WWN =      1 
+    WWL =      0 
+    WWLC =      0 
+    WMIN = 1.2e-07 
+    WMAX =  3e-07 
+    NOIA = 2.6e+42 
+    NOIB = 1.61e+21 
+    NOIC =  3e+08 
+    EM =  1e+06 
+    EF =   0.94 
+    AF =      1 
+    KF =      0 
+    TRS =      0 
+    TRD =      0 
+    TEMPMOD  =      0 
+    LAMBDA   =      0 
+    VTL      =  2e+05 m/s
+    LC       =  5e-09 
+    XN       =      3 
+    LLAMBDA  =      0 
+    LVTL     =      0 
+    LXN      =      0 
+    WLAMBDA  =      0 
+    WVTL     =      0 
+    WXN      =      0 
+    PLAMBDA  =      0 
+    PVTL     =      0 
+    PXN      =      0 
+    RNOIA    =  0.577 
+    RNOIB    =   0.37 
+    SAREF(SA0) = 6.1e-07 m
+    SBREF(SB0) = 6.1e-07 m
+    WLOD     = 1.37e-07 m
+    KU0      = -3.471e-08 1/m
+    KVSAT    =  0.342 
+    KVTH0    = 2.461e-09 m
+    TKU0     =  0.097 
+    LLODKU0  =      1 
+    WLODKU0  =      1 
+    LLODVTH  =      1 
+    WLODVTH  =      1 
+    LKU0     = 1.23e-08 
+    WKU0     = 9.96e-08 
+    PKU0     = 4.6e-14 
+    LKVTH0   = -2.421e-11 
+    WKVTH0   =      0 
+    PKVTH0   =      0 
+    STK2     = 3.87e-10 
+    LODK2    =    0.5 
+    STETA0   =      0 
+    LODETA0  =      1 
+    LXRCRG1  =      0 
+    WXRCRG1  =      0 
+    PXRCRG1  =      0 
+    LXRCRG2  =      0 
+    WXRCRG2  =      0 
+    PXRCRG2  =      0 
+ Model file: /class/ece482/gpdk045_mos_details
+ Model line:          245
+ Model Name: g45p1svt  
+ BSIM4 Model (Level 54)
+    MOBMOD = 0
+    BINUNIT = 2
+    PARAMCHK = 1
+    CAPMOD = 2
+    DIOMOD = 1
+    RDSMOD = 0
+    TRNQSMOD = 0
+    ACNQSMOD = 0
+    RBODYMOD = 0
+    RGATEMOD = 0
+    PERMOD = 1
+    GEOMOD = 0
+    RGEOMOD = 0
+    FNOIMOD = 1
+    TNOIMOD = 0
+    IGCMOD = 1
+    IGBMOD = 1
+    STIMOD = 1
+    VBFWDMOD = 0
+    VERSION =    4.3 
+    TOXREF =  3e-09 
+    TOXE = 2.4e-09 
+    TOXP = 2.071e-09 
+    TOXM = 2.4e-09 
+    DTOX = 3.29e-10 
+    EPSROX =    3.9 
+    CDSC =      0 
+    CDSCB =      0 
+    CDSCD =      0 
+    CIT = 0.0001 
+    NFACTOR = 0.5111 
+    XJ = 1.7e-07 
+    VSAT = 1.255e+05 
+    A0 =  0.001 
+    AGS =  2.604 
+    A1 =      0 
+    A2 =      1 
+    AT =  4e+04 
+    KETA = 0.07615 
+    NSUB =  6e+16 
+    NDEP = 8.5e+17 
+    NSD =  1e+20 
+    NGATE =  8e+19 
+    GAMMA1 =      0 
+    GAMMA2 =      0 
+    VBX =      0 
+    VBM =     -3 
+    XT = 1.55e-07 
+    K1 =   0.25 
+    KT1 = -0.229 
+    KT1L =      0 
+    KT2 = -0.01232 
+    K2 = -0.007129 
+    K3 = -1.701 
+    K3B =    1.2 
+    LPE0 = 7.52e-08 
+    LPEB = 5.608e-08 
+    DVTP0 = 2.2e-06 
+    DVTP1 =    0.2 
+    W0 = 1.585e-07 
+    DVT0 = 0.2034 
+    DVT1 = 0.9515 
+    DVT2 =   0.01 
+    DVT0W =      0 
+    DVT1W = 5.366e+06 
+    DVT2W =      0 
+    DROUT = 0.9621 
+    DSUB =  1.272 
+    VTH0 = -0.3691 
+    EU =      1 
+    UA = 1.195e-11 
+    UA1 = 4.549e-09 
+    UB = 1.496e-18 
+    UB1 = -5.441e-18 
+    UC = 2.836e-11 
+    UC1 = -5e-11 
+    U0 = 0.02471 
+    UTE = -1.524 
+    VOFF = -0.1319 
+    VOFFL = -6.036e-09 
+    MINV =      0 
+    FPROUT =  390.2 
+    PDITS = 0.005043 
+    PDITSD =      0 
+    PDITSL =    100 
+    DELTA =   0.02 
+    RDSW =  327.6 
+    RDSWMIN =      0 
+    RDWMIN =      0 
+    RSWMIN =      0 
+    RDW =    100 
+    RSW =    100 
+    PRWG =   0.25 
+    PRWB =  -0.25 
+    PRT =      0 
+    ETA0 = 0.03115 
+    ETAB = 0.2478 
+    PCLM = 0.6273 
+    PDIBLC1 =      0 
+    PDIBLC2 = 0.0107 
+    PDIBLCB =      0 
+    PSCBE1 = 9.264e+08 
+    PSCBE2 =  1e-20 
+    PVAG =  1.425 
+    WR =      1 
+    DWG =      0 
+    DWB =      0 
+    XW =      0 
+    XWREF =      0 
+    XL =      0 
+    XLREF =      0 
+    B0 =      0 
+    B1 =      0 
+    ALPHA0 =      0 
+    ALPHA1 =   0.06 
+    AGIDL =  9e-08 
+    BGIDL = 3.404e+09 
+    CGIDL =    0.5 
+    PHIN =      0 
+    EGIDL =   0.15 
+    AIGC = 0.00712 
+    BIGC = 0.000631 
+    CIGC =      0 
+    AIGSD = 0.0059 
+    BIGSD = 0.000248 
+    CIGSD =  0.032 
+    AIGBACC =  0.012 
+    BIGBACC = 0.00349 
+    CIGBACC =  0.131 
+    AIGBINV =  0.347 
+    BIGBINV = 0.0312 
+    CIGBINV = 0.0061 
+    NIGC =   2.28 
+    NIGBINV =      1 
+    NIGBACC =    5.2 
+    NTOX =      1 
+    EIGBINV =    1.1 
+    PIGCD =   2.28 
+    POXEDGE =      1 
+    XRCRG1 =     12 
+    TNOIA =    1.5 
+    TNOIB =    3.5 
+    NTNOI =      1 
+    XRCRG2 =      1 
+    BETA0 =   13.5 
+    IJTHDFWD =   0.01 
+    IJTHSFWD =   0.01 
+    IJTHDREV =   0.01 
+    IJTHSREV =   0.01 
+    XJBVD =      1 
+    XJBVS =      1 
+    BVD =     10 
+    BVS =     10 
+    VFB =     -1 
+    GBMIN =  1e-12 
+    RBDB =     50 
+    RBPB =     50 
+    RBSB =     50 
+    RBPS =     50 
+    RBPD =     50 
+    CGSL = 5.4e-11 
+    CGDL = 5.4e-11 
+    CKAPPAS =    0.6 
+    CKAPPAD =    0.6 
+    CF = 1.18e-10 
+    CLC =  1e-07 
+    CLE =    0.6 
+    DWC =      0 
+    DLC =      0 
+    DLCIG = 2.52e-09 
+    DWJ =      0 
+    VFBCV =     -1 
+    ACDE =    1.2 
+    MOIN =      8 
+    NOFF =    2.5 
+    VOFFCV = -0.0486 
+    DMCG = 8.5e-08 
+    DMCI = 8.5e-08 
+    DMDG =      0 
+    DMCGT =      0 
+    XGW =      0 
+    XGL =      0 
+    RSHG =    0.1 
+    NGCON =      1 
+    TCJ = 0.000798 
+    TPB = 0.0019 
+    TCJSW = 0.00024 
+    TPBSW = 0.0019 
+    TCJSWG = 0.00477 
+    TPBSWG = 0.0019 
+    SK0 =      0 
+    SK1 =      0 
+    SK2 =      0 
+    SL =  2e-06 
+    SW =  2e-06 
+    K =      0 
+    LNFACTOR = 2.816e-08 
+    LVSAT = 0.001652 
+    LKETA = -1.385e-08 
+    LK2 = -1.77e-10 
+    LDROUT = 1.023e-08 
+    LVTH0 = 4.367e-09 
+    LUB = 2.766e-26 
+    LU0 = -4.235e-10 
+    LVOFF = 5.304e-09 
+    LETAB = -1.63e-08 
+    LPDIBLC2 = -3.548e-10 
+    WNFACTOR = -4.782e-08 
+    WVSAT = -0.004554 
+    WAGS = 8.643e-08 
+    WKETA = -1.376e-08 
+    WK2 = -7.701e-10 
+    WDROUT = 4.745e-08 
+    WVTH0 = 6.061e-09 
+    WUB = 4.042e-26 
+    WUC = -1.637e-18 
+    WU0 = 5.029e-10 
+    WVOFF = 5.559e-09 
+    WETAB = -2.668e-08 
+    WPDIBLC2 = -9.676e-10 
+    PNFACTOR = 6.587e-16 
+    PVSAT = 2.732e-10 
+    PKETA = 1.122e-15 
+    PK2 = -1.19e-16 
+    PDROUT = -2.847e-15 
+    PVTH0 = -3.872e-16 
+    PUB = -3.73e-33 
+    PU0 = 2.13e-17 
+    PVOFF = -5.016e-16 
+    PETAB = 1.601e-15 
+    PPDIBLC2 = 3.298e-17 
+    TNOM =  298.1 
+    CGSO = 3.1e-11 
+    CGDO = 3.1e-11 
+    CGBO =      0 
+    XPART =      1 
+    RSH =   9.68 
+    JSS = 1.51e-07 
+    JSWS = 3.98e-13 
+    JSWGS = 2.47e-12 
+    PBS =   0.75 
+    MJS =   0.34 
+    PBSWS =   0.49 
+    MJSWS =  0.012 
+    CJS = 0.000998 
+    CJSWS = 6.21e-11 
+    NJS =      1 
+    PBSWGS =   0.71 
+    MJSWGS =   0.86 
+    CJSWGS = 2.53e-10 
+    XTIS =      3 
+    JSD = 1.51e-07 
+    JSWD = 3.98e-13 
+    JSWGD = 2.47e-12 
+    PBD =   0.75 
+    MJD =   0.34 
+    PBSWD =   0.49 
+    MJSWD =  0.012 
+    CJD = 0.000998 
+    CJSWD = 6.21e-11 
+    NJD =      1 
+    PBSWGD =   0.71 
+    MJSWGD =   0.86 
+    CJSWGD = 2.53e-10 
+    XTID =      3 
+    LMLT =      1 
+    WMLT =      1 
+    LINT =  2e-24 
+    LL =      0 
+    LLC =      0 
+    LLN =      1 
+    LW =      0 
+    LWC =      0 
+    LWN =      1 
+    LWL =      0 
+    LWLC =      0 
+    LMIN =  4e-08 
+    LMAX =  6e-08 
+    WINT = 1.089e-08 
+    WL =      0 
+    WLC =      0 
+    WLN =      1 
+    WW =      0 
+    WWC =      0 
+    WWN =      1 
+    WWL =      0 
+    WWLC =      0 
+    WMIN = 1.2e-07 
+    WMAX =  3e-07 
+    NOIA = 1.45e+42 
+    NOIB = 3.57e+26 
+    NOIC =  2e+10 
+    EM = 2.1e+07 
+    EF =  1.147 
+    AF =      1 
+    KF =      0 
+    TRS =      0 
+    TRD =      0 
+    TEMPMOD  =      0 
+    LAMBDA   =      0 
+    VTL      =  2e+05 m/s
+    LC       =  5e-09 
+    XN       =      3 
+    LLAMBDA  =      0 
+    LVTL     =      0 
+    LXN      =      0 
+    WLAMBDA  =      0 
+    WVTL     =      0 
+    WXN      =      0 
+    PLAMBDA  =      0 
+    PVTL     =      0 
+    PXN      =      0 
+    RNOIA    =  0.577 
+    RNOIB    =   0.37 
+    SAREF(SA0) = 6.1e-07 m
+    SBREF(SB0) = 6.1e-07 m
+    WLOD     = 2.86e-07 m
+    KU0      =  1e-07 1/m
+    KVSAT    = -0.386 
+    KVTH0    =  2e-10 m
+    TKU0     =   0.24 
+    LLODKU0  =      1 
+    WLODKU0  =      1 
+    LLODVTH  =    1.8 
+    WLODVTH  =      1 
+    LKU0     = 1.871e-07 
+    WKU0     = 2.4e-07 
+    PKU0     = -3.24e-14 
+    LKVTH0   = 2.4e-10 
+    WKVTH0   = 1.8e-10 
+    PKVTH0   =      0 
+    STK2     =      0 
+    LODK2    =    1.9 
+    STETA0   =      0 
+    LODETA0  =      1 
+    LXRCRG1  =      0 
+    WXRCRG1  =      0 
+    PXRCRG1  =      0 
+    LXRCRG2  =      0 
+    WXRCRG2  =      0 
+    PXRCRG2  =      0 
+  **info** (12demux.cir:56) DC voltage reset to initial transient source value in source 0:vin. new dc=0.0000D+00
+  **warning** (g45p1svt:mpm2 (12demux.cir:49)) Warning: (B1 + Weff) may be too small in BSIM4 model with w=1.2e-07 l=4.5e-08.
+  
+      
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 3         bypass  = 2.0000    
+ **info** dc convergence successful at Newton-Raphson method 
+ ******  
+ 45nm 1:2 demux
+
+ ****** operating point information tnom=  25.000 temp=  25.000 ******
+ ****** operating point status is voltage   simulation time is     0.     
+    node    =voltage      node    =voltage      node    =voltage
+
+ +0:in      =   0.      0:n1__in  = 183.8540p 0:n1__out1= 181.6111m
+ +0:n1__out2=  15.8851n 0:n1__s   =   7.4830a 0:n1__snot=   1.1000 
+ +0:n1__vdd =   1.1000  0:n1__vss =  11.2615p 0:n2__in  =   1.6603p
+ +0:n2__out1= 181.6111m 0:n2__out2=  16.0361n 0:n3__in  =   2.4955p
+ +0:n3__s   = 597.3461f 0:n3__snot=   1.1000  0:n4__in  = 531.8961p
+ +0:n4__s   =  14.2351f 0:n4__snot=   1.1000  0:n5__in  = 148.6796p
+ +0:n5__s   =   3.4409f 0:n6__in  =  70.8998p 0:n6__s   =  10.7942f
+ +0:out1    = 181.6111m 0:out2    =  15.9677n 0:s       =   0.     
+ +0:snot    =   1.1000  0:vdd     =   1.1000  0:vss     =   0.     
+
+
+          ***** job concluded
+ ******  
+ 45nm 1:2 demux
+
+ ****** job statistics summary tnom=  25.000 temp=  25.000 ******
+  
+ ******  Machine Information  ******
+ CPU:
+ model name	: Intel(R) Xeon(R) Silver 4216 CPU @ 2.10GHz
+ cpu MHz	: 2095.078
+ CPU(s)		: 8
+  
+ OS:
+ Linux version 4.18.0-513.9.1.el8_9.x86_64 (mockbuild@x64-builder01.almalinux.org) (gcc version 8.5.0 20210514 (Red Hat 8.5.0-20) (GCC)) #1 SMP Sat Dec 2 05:23:44 EST 2023
+
+ System loadavg : 0.41 0.61 0.84 2/1982 916541
+
+
+  ******  PrimeSim HSPICE Threads Information  ******
+
+  Command Line Threads Count :     1
+  Available CPU Count        :     8
+  Actual Threads Count       :     1
+
+
+  ******  Circuit Statistics  ******
+  # nodes       =      36 # elements   =      54
+  # resistors   =      20 # capacitors =      25 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       5
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =       4 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+  # vector_srcs =       0 # N elements =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.01           1           7
+  transient          0.01       16001         389         158 rev=        12
+  readin             0.02
+  errchk             0.00
+  setup              0.00
+  output             0.00
+
+
+           peak memory used        524.16 megabytes
+           total cpu time            0.04 seconds
+           total elapsed time        0.10 seconds
+           job started at     18:37:32 12/06/2023
+           job ended   at     18:37:32 12/06/2023
+
+>info:         ***** hspice job concluded
+           job total runtime         0.10 seconds
+
+
+ lic: Release hspice token(s) 
+ lic: total license checkout elapse time:        0.05(s)
