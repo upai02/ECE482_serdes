@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      weyrich4
+HostName                       fastx3-06.ews.illinois.edu
+ProcessIdentifier              1526004
+ProcessCreationTime_UTC        1701749371
+ProcessCreationTime_Readable   Mon Dec  4 22:09:31 2023 CST
+AppIdentifier                  /software/cadence-2021-09/IC618/tools.lnx86/dfII/bin/64bit/virtuoso
+OSType                         lnx86
+ReasonForPlacingEditLock       
+FilePathUsedToEditLock         /home/weyrich4/ece482.work/gpdk045/ECE464_45nm/reg/physConfig/physExpand.cfg
+TimeEditLocked                 Mon Dec  4 22:11:14 2023 CST
